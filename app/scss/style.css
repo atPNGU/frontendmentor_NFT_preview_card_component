@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -16,6 +17,24 @@ body {
   background-color: #0d192b;
 }
 
+#card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #14253d;
+  border-radius: 35px;
+}
+
+#cube {
+  border-radius: 15px;
+}
+
+/*
+#avatar {
+    weiße outline und kleiner
+}
+*/
 h1 {
   color: white;
   font-weight: 600;

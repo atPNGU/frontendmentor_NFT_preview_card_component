@@ -15,7 +15,29 @@ body {
     background-color: hsl(217, 54%, 11%);
 }
 
-  // Headings
+// Card
+#card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 35px;
+}
+
+// Images
+#cube {
+    border-radius: 15px;
+}
+
+
+/*
+#avatar {
+    weiße outline und kleiner
+}
+*/
+
+// Headings
 h1 {
     color: white;
     font-weight: 600;
@@ -38,3 +60,4 @@ p {
 #author {
     color: white;
 }
+
