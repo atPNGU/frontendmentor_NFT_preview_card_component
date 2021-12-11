@@ -7,31 +7,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/app/scss/style.css"
-  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="/app/scss/style.css">
+  <title>NFT preview card component</title>
 </head>
 <body>
-  <div id="card">
-    <img id="cube" src="/images/image-equilibrium.jpg" alt="equilibrium cube">
-    <article id="description">
-      <h1>Equilibrium #3429</h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
+  <article class="card">
+    <div class="card_image">
+      <img id="cube" src="/images/image-equilibrium.jpg" alt="equilibrium cube">
+    </div>
+    <section class="content_card">
+      <section class="description">
+        <h2>Equilibrium #3429</h2>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </section>
       
       <ul>
-        <li id="ethereum"><img src="/images/icon-ethereum.svg"> 0.041 ETH</li>
-        <li id="timer"><img src="/images/icon-clock.svg"> 3 days left</li>
+        <li id="ethereum"><img src="/images/icon-ethereum.svg">0.041 ETH</li>
+        <li id="timer"><img src="/images/icon-clock.svg">3 days left</li>
       </ul>
       
-      <article>
+      <section class="credits">
         <img src="/images/image-avatar.png" alt="avatar">
         <p>Creation of <a id="author">Jules Wyvern</a></p>
-      </article>
+      </section>
       
-    </article>
-  </div>
+    </section>
+  </article>
   <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/atPNGU">atPNGU</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/atPNGU">atPNGU</a>.</p>
   <footer>
 </body>
 </html>

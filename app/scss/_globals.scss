@@ -1,79 +1,146 @@
-html { //default
+// Defaults
+html {
     margin: 0;
     padding: 0;
     font-size: 100%;
     box-sizing: border-box;
   }
   
-*, *::before, *::after{
-    box-sizing: inherit;
-}
-  
 body {
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     background-color: $mainBG_darkBlue;
-    //color: hsl(0, 0%, 100%, 65%);
-    color: $softBlue
-}
-
-// Card
-#card {
-    background-color: $cardBG_darkBlue;
+    color: $softBlue;
     padding: 1.25rem;
-    border-radius: 35px;
 }
 
-// Images
 img {
     max-width: 100%; //removes horizontal scroll bar
 }
 
-#cube {
-    border-radius: 15px;
-}
-
-
-/*
-#avatar {
-    weiße outline und kleiner
-}
-*/
-
-// Headings
-h1 {
-    color: white;
+// Specifics
+h2 {
     font-weight: 600;
-    margin: 1rem 0.5rem 0.5rem 0;
 }
 
-// content
 p {
     font-weight: 300;
 }
 
-#ethereum {
-    color: $cyan;
-    font-weight: 400;
-    
-}
-
-#timer {
-    font-weight: 400;
-}
-
 ul {
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 0;
-    border-bottom: 1px solid $line_darkBlue;
+    font-weight: 300;
 }
 
-// Anchor
-#author {
+a:visited {
+    text-decoration: none; color: $softBlue;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: smaller;
+    opacity: 25%;
+}
+
+
+
+// Classes
+
+.card {
+    background-color: $cardBG_darkBlue;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.card_image {
+    border-radius: 0.75rem;
+    background-color: $cyan;
+}
+
+.card_image img {
+    border-radius: 0.75rem;
+}
+
+.card_image img:hover {
+    cursor: pointer;
+    opacity: 50%;    
+}
+
+.card h2 {
     color: white;
 }
 
+.card h2:hover {
+    color: $cyan;
+    cursor: pointer;
+}
 
+.card ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 2px solid $line_darkBlue;
+    padding-bottom: 2rem;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+}
+
+.card ul li img {
+    margin-right: 0.5rem;
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.credits img {
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+
+// ID's
+#ethereum {
+    font-weight: 400;
+    color: $cyan;
+}
+
+/*#cube {
+    border-radius: 0.75rem;
+    background-color: cyan;
+}
+
+#cube:hover {
+    cursor: pointer;
+    opacity: 50%;
+}*/
+
+#author {
+    color: white;
+    font-weight: 400;
+}
+
+#author:hover {
+    color: $cyan;
+    cursor: pointer;
+}
+
+// Querrys
+@media (min-width: 500px) {
+    .card {
+        width: 450px;
+        margin: 0 auto 1rem;
+    }
+}
