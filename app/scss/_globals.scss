@@ -42,31 +42,54 @@ footer {
     justify-content: center;
     font-size: smaller;
     opacity: 25%;
+    margin-top: 9rem;
 }
 
-
+footer img {
+    width: 1rem;
+    padding: 0 0.2rem;
+}
 
 // Classes
-
 .card {
     background-color: $cardBG_darkBlue;
     padding: 1.75rem;
     border-radius: 1rem;
     margin: 1rem;
+    transform: translate(0, 25%);
 }
 
-.card_image {
+.main_image {
+    position: relative;
+}
+
+.cube {
+    display: block;
     border-radius: 0.75rem;
-    background-color: $cyan;
 }
 
-.card_image img {
-    border-radius: 0.75rem;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+     right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s ease;
+    opacity: 0;
+    background-color: rgba(0, 255, 247, 0.5);
 }
 
-.card_image img:hover {
-    cursor: pointer;
-    opacity: 50%;    
+.eye {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_image:hover .overlay {
+    opacity: 1;
 }
 
 .card h2 {
@@ -116,16 +139,6 @@ footer {
     font-weight: 400;
     color: $cyan;
 }
-
-/*#cube {
-    border-radius: 0.75rem;
-    background-color: cyan;
-}
-
-#cube:hover {
-    cursor: pointer;
-    opacity: 50%;
-}*/
 
 #author {
     color: white;
