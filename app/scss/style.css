@@ -1,29 +1,30 @@
 @charset "UTF-8";
 html {
+  margin: 0;
+  padding: 0;
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
   background-color: #0d192b;
+  color: rgba(139, 172, 218, 0.75);
 }
 
 #card {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
   background-color: #14253d;
+  padding: 1.25rem;
   border-radius: 35px;
+}
+
+img {
+  max-width: 100%;
 }
 
 #cube {
@@ -38,11 +39,10 @@ body {
 h1 {
   color: white;
   font-weight: 600;
+  margin: 1rem 0.5rem 0.5rem 0;
 }
 
 p {
-  color: #8bacda;
-  font-size: 18px;
   font-weight: 300;
 }
 
@@ -51,7 +51,19 @@ p {
   font-weight: 400;
 }
 
+#timer {
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid #2f415b;
+}
+
 #author {
   color: white;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
