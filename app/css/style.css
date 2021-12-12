@@ -48,7 +48,7 @@ footer {
           justify-content: center;
   font-size: smaller;
   opacity: 25%;
-  margin-top: 9rem;
+  margin-top: 13rem;
 }
 
 footer img {
@@ -58,6 +58,7 @@ footer img {
 
 .card {
   background-color: #14253d;
+  max-width: 26vh;
   padding: 1.75rem;
   border-radius: 1rem;
   margin: 1rem;
